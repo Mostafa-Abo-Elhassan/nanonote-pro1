@@ -1,0 +1,21 @@
+# Dependency directories (المساحة العملاقة)
+node_modules/
+
+# Build outputs (مجلد الـ exe والنسخة النهائية)
+out/
+dist/
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (لو عندك ملف سري للباسوردات مثلاً)
+.env
+
+# Electron-specific
+.electron-forge/

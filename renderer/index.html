@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="appBody">
+    <div id="sidebar">
+        <div class="nav-header">NANO NOTE 📂</div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="بحث سريع..." oninput="searchNotes()">
+        </div>
+        <div id="tabsList"></div>
+        <button class="add-btn" onclick="addNewNote()">+ نوت جديدة</button>
+    </div>
+
+    <div id="main">
+        <div class="toolbar">
+            <button onclick="toggleSidebar()">☰</button>
+            <button id="compactBtn">◪ Compact</button>
+            <button onclick="toggleTheme()">🌙/☀</button>
+            <div style="flex: 1; -webkit-app-region: drag;"></div>
+            <button onclick="windowControl('min')">_</button>
+            <button onclick="windowControl('close')" class="close-btn">×</button>
+        </div>
+        <textarea id="editor" placeholder="ابدأ الكتابة هنا..."></textarea>
+    </div>
+
+    <script src="ui.js"></script>
+</body>
+</html>
